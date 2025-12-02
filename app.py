@@ -82,7 +82,7 @@ def get_anthropic_client():
     except:
         api_key = st.sidebar.text_input("Enter Anthropic API Key", type="password")
         if not api_key:
-            st.warning(⚠️ Please enter your API key in the sidebar")
+            st.warning("Please enter your API key in the sidebar")
             st.stop()
     
     return anthropic.Anthropic(api_key=api_key)
@@ -384,5 +384,6 @@ with st.sidebar:
 # ============================================================================
 # RUN MAIN APP
 # ============================================================================
+
 
 if __name__ == "__main__":
